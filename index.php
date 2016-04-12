@@ -32,36 +32,6 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#">Suomen Frisbeegolf-radat</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#header">Hae ratoja</a>
-                    </li>
-                    <li>
-                        <a href="#info">Info</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-
     <!-- Header -->
     <a name="header"></a>
     <div class="intro-header">
@@ -70,37 +40,29 @@
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <h1>Suomen Frisbeegolf-radat</h1>
-                        <hr class="intro-divider">
 
                         <ul class="nav nav-tabs">
-                          <li class="active"><a data-toggle="tab" href="#home">Hae rataa</a></li>
-                          <li><a data-toggle="tab" href="#menu1">Hae pelaajaa</a></li>
-                          <li><a data-toggle="tab" href="#menu2">Lisää tulos</a></li>
+                            <li class="active"><a data-toggle="tab" href="#info" id="info-osio">Info</a></li>
+                            <li><a data-toggle="tab" href="#home" id="hae-radat">Hae radat</a></li>
+                            <li><a data-toggle="tab" href="#menu1" id="hae-pelit">Hae pelit</a></li>
+                            <li><a data-toggle="tab" href="#menu2" id="lisaa-tulos">Lisää tulos</a></li>
                         </ul>
 
                         <div class="tab-content">
-                          <div id="home" class="tab-pane fade in active">
-                            <h2>Hae rataa</h2>
-                            <form method="post">
-                              <div class="form-group">
-                                <h3>Rata</h3>
-                                <input id="input_rata" type="text" class="form-control" name="pelaaja_ID">
-                              </div>
-                              <button type="submit" class="btn btn-success btn-lg ratahaku">Hae rataa</button>
-                            </form>
+
+                          <div id="info" class="tab-pane fade in active">
+                            <h2>Info</h2>
+                            <h3>Tervetuloa frisbeegolf-pelirekisteriin. Täällä voit lisätä oman pelituloksesi sekä hakea Suomen frisbeegolf-ratoja ja muiden tuloksia.</h3>
+                          </div>
+
+                          <div id="home" class="tab-pane fade">
+                            <h2>Radat</h2>
+
                           </div>
 
                           <div id="menu1" class="tab-pane fade">
-                            <h2>Hae pelaajaa</h2>
-                            <form method="post" action="lisaatulos.php">
-                              <div class="form-group">
-                                <h3>Pelaaja</h3>
-                                <input type="text" class="form-control" name="pelaaja_ID">
-                                <h3>Seura</h3>
-                                <input type="text" class="form-control" name="ratatulos">
-                              </div>
-                              <button type="submit" class="btn btn-success btn-lg">Hae pelaajaa</button>
-                            </form>
+                            <h2>Pelit</h2>
+
                           </div>
 
                           <div id="menu2" class="tab-pane fade">
@@ -126,54 +88,6 @@
     </div>
     <!-- /.intro-header -->
 
-    <!-- Page Content -->
-
-	<a name="results"></a>
-    <div class="content-section-a">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Haun tulokset:</h2>
-                    <p class="lead">Tähän tulee hakujen tulokset</p>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <a name="info"></a>
-    <div class="content-section-b">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Info-osio</h2>
-                    <p class="lead">Tähän tulee infoa</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#header">Hae ratoja</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#info">Info</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Suomen Frisbeegolf-radat. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -181,7 +95,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <script src="js/kaupunkihaku.js"></script>
+    <script src="js/haut.js"></script>
 
 </body>
 
